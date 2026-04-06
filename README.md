@@ -1,89 +1,127 @@
-# React + Vite
+# 📱 MyFirstApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descripción
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación desarrollada con **React y Vite**, diseñada para demostrar el uso de componentes reutilizables, props, estructura modular y buenas prácticas en el desarrollo frontend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-
-
-#  Mobiles Store - Carrito de Compras
-
-##  Descripción
-
-**Mobiles Store** es una aplicación web desarrollada para la gestión y compra de celulares mediante un sistema de carrito de compras. Permite visualizar productos, administrarlos y realizar un proceso básico de compra desde una interfaz moderna y sencilla.
+La aplicación está organizada por carpetas para facilitar la escalabilidad, el mantenimiento y la reutilización de código.
 
 ---
 
-## Características principales
+## ✨ Características principales
 
-* Visualización de productos en tarjetas.
-* Gestión de productos (editar y eliminar).
-* Buscador de artículos.
-* Carrito de compras interactivo.
-* Formulario de registro y pago.
-* Interfaz responsive y fácil de usar.
-
----
-
-## Interfaz gráfica
-
-La aplicación cuenta con:
-
-* Barra de navegación con buscador y carrito.
-* Sección de ventas con tarjetas de productos.
-* Botones de acción para editar y eliminar.
-* Panel lateral con formulario de registro y pago.
-* Diseño moderno basado en componentes reutilizables.
+- Desarrollo con **React JSX**
+- Uso de **Vite** como entorno de desarrollo
+- Componentes reutilizables
+- Uso de **Props**
+- Separación por módulos
+- Estilos organizados en carpeta compartida
+- Arquitectura escalable
+- Código limpio y mantenible
 
 ---
 
-##  Arquitectura del proyecto
+## 🖥️ Interfaz gráfica
 
-El proyecto está estructurado usando componentes reutilizables:
+La aplicación cuenta con una interfaz moderna y organizada compuesta por:
 
+- **Header** → encabezado principal
+- **Content** → contenido principal de la aplicación
+- **Props** → demostración del uso de props en React
+- **Footer** → pie de página
+
+Puedes agregar aquí una captura de pantalla:
+
+![Vista previa de la app](./public/img/captura.png)
+
+> Si aún no tienes la imagen, luego puedes tomar screenshot de la app y guardarla en `public/img`.
+
+---
+
+## 🏗️ Arquitectura del Proyecto
+
+```bash
+MYFIRTAPP/
+│
+├── public/
+│   └── img/
+│
+├── src/
+│   ├── features/
+│   │   └── layout/
+│   │       └── components/
+│   │           ├── Content.jsx
+│   │           ├── Footer.jsx
+│   │           ├── Header.jsx
+│   │           └── Props.jsx
+│   │
+│   ├── hooks/
+│   ├── products/
+│   ├── shared/
+│   │   └── styles/
+│   │       ├── App.css
+│   │       └── index.css
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
 ```
-src/
- ├── features/
- │    └── layout/
- │         ├── Header
- │         ├── Content
- │         └── Footer
- ├── components/
- ├── assets/
- └── App.jsx
+
+### 📂 Explicación de la estructura
+
+- **public/** → recursos estáticos
+- **src/** → código fuente principal
+- **features/** → módulos principales de la aplicación
+- **components/** → componentes reutilizables
+- **shared/** → estilos y recursos compartidos
+- **hooks/** → hooks personalizados
+- **App.jsx** → componente principal
+- **main.jsx** → punto de entrada de React
+
+---
+
+## 🚀 Instalación y ejecución
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/drexmezadelaossa/Myfirtapp.git
 ```
 
-### Tecnologías utilizadas
+Ingresa al proyecto:
 
-* React.js
-* React Router DOM
-* CSS / Bootstrap
-* JavaScript (ES6+)
+```bash
+cd MYFIRTAPP
+```
+
+Instala dependencias:
+
+```bash
+npm install
+```
+
+Ejecuta el proyecto:
+
+```bash
+npm run dev
+```
 
 ---
 
-## Datos del autor
+## 👨‍💻 Datos importantes del Autor
 
-**Autor:** Andres Mauricio Meza
-**Proyecto:** Carrito de Compras - Mobiles Store
-**Año:** 2026
+**Nombre:** Andrés Meza  
+**Programa:** Desarrollo de Software / Frontend  
+**Tecnologías:** React, Vite, JavaScript, CSS  
+**GitHub:** <https://github.com/drexmezadelaossa/Myfirtapp.git>
 
 ---
 
-## Notas importantes
+## 🔗 Repositorio Github
 
-* Proyecto académico orientado al aprendizaje de React y manejo de componentes.
-* Implementa principios básicos de modularización y navegación SPA.
+Agrega aquí el vínculo solicitado:
+
+<https://github.com/drexmezadelaossa/Myfirtapp.git>

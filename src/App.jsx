@@ -15,12 +15,19 @@ function App() {
     <BrowserRouter>
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Content></Content >}> </Route>
+        <Route path="Inicio" element={<Content></Content >}> </Route>
         <Route path="/props" element={<Props></Props>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
   )
+
+  
 }
+
+
+
+
+
 
 export default App
