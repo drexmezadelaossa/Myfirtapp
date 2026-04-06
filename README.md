@@ -30,6 +30,12 @@ La aplicación cuenta con una interfaz moderna y organizada compuesta por:
 - **Props** → demostración del uso de props en React
 - **Footer** → pie de página
 
+Puedes agregar aquí una captura de pantalla:
+
+![Vista previa de la app](./public/img/taller_2.png)
+
+> Si aún no tienes la imagen, luego puedes tomar screenshot de la app y guardarla en `public/img`.
+
 ---
 
 ## 🏗️ Arquitectura del Proyecto
