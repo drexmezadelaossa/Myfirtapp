@@ -32,7 +32,7 @@ La aplicación cuenta con una interfaz moderna y organizada compuesta por:
 
 Puedes agregar aquí una captura de pantalla:
 
-![Vista previa de la app](./public/img/captura.png)
+![Vista previa de la app](./public/img/taller_2.png)
 
 > Si aún no tienes la imagen, luego puedes tomar screenshot de la app y guardarla en `public/img`.
 
