@@ -2,25 +2,32 @@ import { Header } from "./features/layout/components/Header";
 import { Content } from "./features/layout/components/Content";
 import { Footer } from "./features/layout/components/Footer";
 import Props from "./features/layout/components/Props";
-
-// Solo necesitamos BrowserRouter, Routes y Route
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
-      {/* El Header y Footer están FUERA de <Routes>, así que se verán en todas las páginas */}
       <Header /> 
 
       <Routes>
-        {/* path="/" es la página principal (Home) */}
+        {/* Ruta principal */}
         <Route path="/" element={<Content />} />
         
-        {/* path="/props" cargará el componente Props */}
+        {/* Ruta de Props sincronizada */}
         <Route path="/props" element={<Props />} />
+
+        {/* Agrega aquí las demás cuando las tengas listas */}
+        <Route path="/celulares" element={<Content />} /> 
+        <Route path="/accesorios" element={<Content />} />
+        <Route path="/tablets" element={<Content />} />
         
-        {/* Opcional: Ruta para cuando no encuentra nada (404) */}
-        <Route path="*" element={<h2>404 - Página no encontrada</h2>} />
+        {/* 404 personalizado */}
+        <Route path="*" element={
+          <div className="container text-center py-5">
+            <h2 className="display-1">404</h2>
+            <p>Lo sentimos, esta página no existe.</p>
+          </div>
+        } />
       </Routes>
 
       <Footer />
